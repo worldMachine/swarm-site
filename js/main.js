@@ -18,8 +18,9 @@ function init() {
     scene.add( mesh );
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
+    renderer.setSize( window.innerWidth - 400, window.innerHeight - 200);
+    document.getElementById("canvas-hook").appendChild(renderer.domElement);
+    // document.body.appendChild( renderer.domElement );
 
 }
 

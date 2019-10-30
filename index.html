@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="app">
@@ -73,34 +74,29 @@
 	</nav>
 
   <!-- Header -->
-  <div id="headerblock" class="position-relative overflow-hidden text-center bg-light top-section cc my-header" style="">
-    <div class="layer">
-      <div class="col-md-12 pt-5 my-5">
-        <h1 class="display-4 font-weight-normal pt-5 mt-5">Swarm Studios</h1>
-        <p class="lead font-weight-normal">Service: Augmented Reality | Established in Los Angeles</p>
-
-
-          <p>
-
-
-          </p>
+  <div id="headerblock" class="position-relative overflow-hidden text-center top-section cc my-header" style="">
+<!--    <div class="layer">-->
+<!--      <div class="col-md-12 pt-5 my-5 box-container">-->
+          <div class="box in-header">
+              <div class="inner">
+                  <span>Swarm Studios</span>
+              </div>
+              <div class="inner">
+                  <span>Swarm Studios</span>
+              </div>
 
       </div>
-    </div>
+<!--      </div>-->
+<!--    </div>-->
+
+
+<div class="moving-bg"></div>
+
+
+
+<!--      </div>-->
+<!--    </div>-->
   </div>
-
-	<style>
-
-</style>
-
-
-
-<div class="d-md-flex flex-md-equal w-100 content" id="about-us">
-
-	<x-model class="d-md-flex flex-md-equal w-100 content" src="assets/cesium-milk-truck.glb"></x-model>
-	<script src="js/3d-model-bundle.js"></script>
-</div>
-
   <!-- About Us -->
 
     <div class="d-md-flex flex-md-equal w-100 content" id="about-us">
@@ -108,13 +104,38 @@
         <div class="my-5 mx-5 py-5 px-5">
           <h2 class="display-5">About Us</h2>
 
-              <p class="lead text-left">Swarm Studios is an augmented reality design studio specializing in Brand Design and Creative Marketing. Our quick to access Augmented Reality can be accessed directly by your phone's camera application to a web-based client that allows the user to view, interact, and share your interactive brand all at the single tap of your finger.
-</p>
+              <p class="lead text-left">Swarm Studios is an augmented reality design studio specializing in Brand Design and Creative Marketing. Our quick to access Augmented Reality can be accessed directly by your phone's camera application to a web-based client that allows the user to view, interact, and share your interactive brand all at the single tap of your finger.</p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-8">
+                    <div class="single_service_part">
+                        <img src="assets/boy.png" alt="#">
+                        <h3>Lucas</h3>
+                        <p>CEO and Marketing Guru</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-8">
+                    <div class="single_service_part">
+                        <img src="assets/boy.png" alt="#">
+                        <h3>Ryan</h3>
+                        <p>CDO and Digital Artist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-8">
+                    <div class="single_service_part">
+                        <img src="assets/boy.png" alt="#">
+                        <h3>K. Brady Davis</h3>
+                        <p>CTO and Software Engineer</p>
+                    </div>
+                </div>
+
+            </div>
 
 
         </div>
       </div>
-      <div id="about-photo" class="bg-light text-center overflow-hidden cc" style="background-image: url(https://images.pexels.com/photos/2541310/pexels-photo-2541310.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940)"></div>
+<!--      <div id="about-photo" class="bg-light text-center overflow-hidden cc" style="background-image: url(https://images.pexels.com/photos/2541310/pexels-photo-2541310.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940)"></div>-->
+<!--        <div id="about-photo" class="bg-light text-center overflow-hidden cc" ></div>-->
+
     </div>
 
 
@@ -123,7 +144,7 @@
   <!-- What We Do -->
 
     <div class="d-md-flex d-sm-flex flex-md-equal flex-sm-equal w-100 content" id="what-we-do">
-      <div id="about-photo" class="bg-light text-center overflow-hidden cc" style="background-image: url(https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940)"></div>
+      <div id="what-photo" class="bg-light text-center overflow-hidden cc" style="background-image: url(https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;"></div>
       <div class="bg-white text-center text-body overflow-hidden">
         <div class="my-5 mx-5 py-5 px-5">
           <h2 class="display-5">What We Do</h2>
@@ -135,6 +156,10 @@
 
         </div>
       </div>
+    </div>
+
+    <div class="d-md-flex d-sm-flex flex-md-equal flex-sm-equal w-100 content" id="canvas-hook">
+
     </div>
 
 
@@ -166,13 +191,32 @@
 
   <footer class="container">
     <div class="row">
-      <div class="col-12 col-md text-center py-3 text-body">
+      <div class="col-12 col-md text-center py-3 text-body footer-icons">
 
+          <a href="#" class="fa fa-facebook footer-icon"></a>
+          <a href="#" class="fa fa-twitter footer-icon"></a>
+          <a href="#" class="fa fa-google footer-icon"></a>
+          <a href="#" class="fa fa-linkedin footer-icon"></a>
       </div>
     </div>
   </footer>
+<!--    <footer class="social-footer">-->
+<!--        <div class="social-footer-left">-->
+<!--            <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>-->
+<!--        </div>-->
+<!--        <div class="social-footer-icons">-->
+<!--            <ul class="menu simple">-->
+<!--                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+<!--                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>-->
+<!--                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </footer>-->
 
-<script>
+
+
+    <script>
 function initMap() {
 // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -378,9 +422,11 @@ function initMap() {
   </script>
 
     <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
-    <script src="/static/js/edit.js"></script>
+
+<!--    <script src="/static/js/edit.js"></script>-->
 		<script src="js/three.min.js"></script>
 		<script src="js/main.js"></script>
+        <script src="js/GLTFLoader.js"></script>
 
 </body>
 </html>
