@@ -1,0 +1,170 @@
+.container {
+    max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+}
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+/*----------------------------------------------------*/
+
+.about-description {
+    /*width: 50%;*/
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.about-photo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.lucas {
+    background-image: url('../img/lucas.jpeg');
+}
+
+.ryan {
+    background-image: url('../img/ryan.jpeg');
+}
+
+.brady {
+    background-image: url('../img/brady.jpg');
+}
+
+.header-links {
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
+}
+
+.about-line {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.nav-item {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.selected {
+    color: white;
+}
+
+.about-job-title {
+    color: #455A64;
+}
+
+/*------------------ Gallery Styles --------------------*/
+.qr-bg {
+    padding-top: 3%;
+    background-image: url('../img/ig-bg.jpg');
+    background-size: cover;
+    margin: 1%;
+}
+
+.threeD-bg {
+    padding-top: 3%;
+    background-image: url('../img/3d-scape-bg.jpg');
+    background-size: cover;
+    margin: 1%;
+}
+
+.ig-bg {
+    padding-top: 3%;
+    padding-left: 2%;
+    background-image: url('../img/ig-bg-2.jpg');
+    background-size: cover;
+    margin: 1%;
+}
+
+.qr {
+    background-image: url('../img/qr-code-swarm-v2.png');
+}
+.ig {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    /*border-radius: 50%;*/
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url('../img/instagram.png');
+}
+.threeD {
+    background-size: contain;
+    background-image: url('../img/3d-model.png');
+}
