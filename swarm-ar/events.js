@@ -2,17 +2,21 @@ AFRAME.registerComponent('markerhandler', {
 
     init: function() {
         const animatedMarker = document.querySelector("#animated-marker");
-        const aEntity = document.querySelector("#animated-model");
+        const aEntity = document.querySelector("#btn-1");
 
         // every click, we make our model grow in size :)
         animatedMarker.addEventListener('click', function(ev, target){
-            // const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-            // if (aEntity && intersectedElement === aEntity) {
-            //     const scale = aEntity.getAttribute('scale');
-            //     Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
-            //     aEntity.setAttribute('scale', scale);
-            // }
-            window.location.replace("http://www.w3schools.com");
+            const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
+            if (aEntity && intersectedElement === aEntity) {
+                // const scale = aEntity.getAttribute('scale');
+                // Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
+                // aEntity.setAttribute('scale', scale);
+            }
+            // window.location.replace("http://www.w3schools.com");
 
         });
 }});
+
+// document.getElementById('btn-1').addEventListener("click", (e)=> {
+//     window.location.replace("http://swarmstud.io");
+// });
